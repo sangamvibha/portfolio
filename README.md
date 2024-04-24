@@ -1,2 +1,0 @@
-# vibhasangam
-# vibhasangam-portfolio
