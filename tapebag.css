@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'raleway';
+}
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+#main{
+    height: 100%;
+    width: 100%;
+
+}
+#page1{
+    height: 127%;
+    width: 100%;
+    background-image: url(tapebag/Bg.png);
+    background-size: cover;
+   background-color: #BDD5D4;
+}
+#content h1{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 800;
+    padding: 100px 20px;
+}
+#content img {
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+}
+#about{
+   color: rgb(0, 0, 0);
+    padding: 50px;
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 40%;
+}
+#about h3{
+    font-size: 50px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+#about p{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 0px 20px rgb(0, 0, 0);
+    text-align: justify;
+}
+#about h4{
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#page3 h1{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 800;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+#sbs{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#row1{
+    display: flex;
+    padding-bottom: 10px;
+}
+#row2{
+    display: flex;
+}
+#page2 img{
+    height: 500px;
+    width: 800px;
+}
+#bees1{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    height: auto;
+    width: 100%;
+}
+#bees8{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    height: auto;
+    width: 100%;
+    rotate: 40deg;
+}
+
+#bees9{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    height: auto;
+    width: 100%;
+    rotate: 180deg;
+}
+#bees3{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    height: auto;
+    width: 100%;
+}
+
+#bees5{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    height: auto;
+    width: 100%;
+}
+#bees6{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    height: auto;
+    width: 100%;
+    rotate: 20deg;
+}
+#bees7{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    width: 100%;
+    rotate: 50deg;
+}
+#page3{
+    height: 110%;
+    width: 100%;
+}
+#page3 img{
+    height:300px;
+    width: 400px;
+    padding: 20px;
+}
+#shotlist{
+    height: auto;
+    width: 20%;
+}
+
+#page4{
+    height: 105%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#page4 h2{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+
+}
+.tapebagvideo{
+    height: 600px;
+    width: 800px;
+    object-fit: cover;
+    position: absolute;
+    top: 295%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+a {
+    text-decoration: none;
+    padding: 6px 14px;
+    position: absolute;
+    top: 12%;
+    left: 3%;
+}
+
+a:hover {
+    color: #341600
+}
+
+.previous {
+    color: #000000;
+}
+
+.round {
+    border-radius: 50%;
+}
+.fa-solid.fa-circle-left {
+    font-size: 80px;
+}

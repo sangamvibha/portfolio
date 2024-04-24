@@ -1,0 +1,273 @@
+@import url(https://www.fontspace.com/brettley-signature-font-f916003b6e2e);
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway';
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+.page {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+   
+  }
+  .nav {
+    padding: 40px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navpart1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    animation: fade-down 1s .4s;
+  }
+  
+  .navpart1 h3 {
+    font-weight: 100;
+  }
+  
+  .navpart2 {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    animation: fade-down 1s .4s;
+  }
+  
+  .navpart2 h4 {
+    padding: 10px 20px;
+    border: 0.5px solid rgba(255, 255, 255, 0.802);
+    border-radius: 50px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.835);
+    font-size: 20px;
+    position: relative;
+    transition: all ease 0.3s;
+    overflow: hidden;
+  }
+  
+  .navpart2 h4::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    left: 0;
+    bottom: -100%;
+    border-radius: 50%;
+    transition: all ease 0.3s;
+  }
+  
+  .navpart2 h4:hover::after {
+    bottom: 0;
+    border-radius: 0;
+  }
+  
+  .navpart2 h4 a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    z-index: 9;
+  }
+  
+  .navpart2 h4 a:hover {
+    color: black;
+  }
+.icons {
+  position: fixed;
+  top: 39%;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.icons a {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 22px;
+  font-family: 'Raleway';
+  margin: 2px;
+  text-align: left;
+  border-radius: 50px 0px 0px 50px;
+  transform: translate(140px, 0px);
+  transition: all 0.5s;
+}
+
+.icons a:hover {
+  transform: translate(0px, 0px);
+}
+
+.icons a:hover .fa-instagram {
+  color: rgb(0, 0, 0);
+}
+
+.icons a:hover .fa-whatsapp {
+  color: rgb(0, 0, 0);
+}
+
+.icons a:hover .fa-linkedin {
+  color: rgb(0, 0, 0);
+}
+
+.icons a i {
+  margin-right: 30px;
+  transition: all 0.5s;
+  color: rgb(255, 255, 255);
+}
+
+.icons a:hover i {
+  transform: rotate(360deg);
+}
+
+.whatsapp,
+.instagram,
+.linkedin {
+  background-color: none;
+  color: rgb(0, 0, 0);
+
+}
+
+.whatsapp:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.instagram:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.linkedin:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.about{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.about img{
+  height: 500px;
+  width: auto;
+  position:absolute;
+  left: 20%;
+}
+
+.content-section{
+  position: absolute;
+  left: 50%;
+  width: 550px;
+}
+
+.main{
+  width: 100%;
+  max-width: 95%;
+  display: flex;
+  padding-top: 100px;
+  justify-content: space-around;
+}
+.content-section h1{
+  color: white;
+  font-size: 80px;
+  font-family: 'Raleway';
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.content-section h5{
+  color: #ffc0cb;
+  font-size: 30px;
+  font-family: 'Raleway';
+  font-weight: 600;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+
+}
+.about p{
+  color: white;
+  font-size: 16px;
+  font-family: 'Raleway';
+  font-weight: 600;
+  margin-bottom: 45px;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.about button{
+  background: pink;
+  color: black;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-size: 16px;
+  font-weight:900;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.about button:hover{
+  background-color: rgb(255, 54, 101);
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform: scale(1.1);
+
+}
+@keyframes example {
+  0%   {background-color:rgb(255, 167, 188);}
+  25%  {background-color: rgb(170, 234, 135);}
+  50%  {background-color: rgb(120, 203, 255);}
+  100% {background-color: #d394fd;}
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image {
+  display: block;
+  position: relative;
+  width: 30%; /* Adjust the width as needed */
+  height: 50%; /* Adjust the height as needed */
+  overflow: hidden;
+  margin: 5px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.overlay {
+  position: absolute;
+  top: -100%; /* Start the overlay above the image */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the transparency as needed */
+  transition: top 0.3s; /* Add a smooth transition for the overlay animation */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image:hover .overlay {
+  top: 0; /* Move the overlay down on hover */
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+}

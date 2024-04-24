@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'raleway';
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+
+}
+#page1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-image: url(Holi/bg.png);
+    object-fit: cover;
+    background-size: 100%;
+}
+
+#content {
+    height: 100%;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    margin: 250px 150px;
+}
+
+#content h1 {
+    font-size: 58px;
+    font-weight: 500;
+}
+
+#content h2 {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#content p {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 0;
+    text-align: justify;
+}
+
+#content h4 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+#content img {
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+}
+#video{
+    height: 100%;
+    width:60%;
+    padding: 100px;
+    
+}
+#video{
+    height: 820px;
+    width:520px;
+    object-fit:fill;
+}
+a {
+    text-decoration: none;
+    padding: 6px 14px;
+    position: absolute;
+    top: 12%;
+    left: 9%;
+}
+
+a:hover {
+    color: #ee3737
+}
+
+.previous {
+    color: #000000;
+}
+
+.round {
+    border-radius: 50%;
+}
+.fa-solid.fa-circle-left {
+    font-size: 80px;
+}

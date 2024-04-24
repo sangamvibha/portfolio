@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'raleway';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+#content {
+    height: 50%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 150px 150px;
+}
+
+#content h1 {
+    font-size: 58px;
+    font-weight: 300;
+}
+
+#content h2 {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#content p {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 0;
+    text-align: justify;
+}
+
+#content h4 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+#content img {
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+}
+
+#image {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#image img {
+    height: 250px;
+    width: 450px;
+    object-fit: cover;
+    padding-bottom: 2px;
+}
+#document{
+    height: 100%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#document h2{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: 300;
+    color: white;
+    text-transform: uppercase;
+
+}
+#document .documentary{
+    height: 600px;
+    width: 800px;
+    object-fit: cover;
+    position: absolute;
+    top: 155%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  a {
+    text-decoration: none;
+    padding: 6px 14px;
+    position: absolute;
+    top: 5%;
+    left: 8%;
+}
+
+a:hover {
+    color: #341600
+}
+
+.previous {
+    color: #000000;
+}
+
+.round {
+    border-radius: 50%;
+}
+.fa-solid.fa-circle-left {
+    font-size: 80px;
+}

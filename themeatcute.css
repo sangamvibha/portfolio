@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(https://www.fontspace.com/brettley-signature-font-f916003b6e2e);
+
+@font-face {
+    font-family: myfont;
+    src: url(ChalkMarkDisplay-VGxjy.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+#main {
+    height: 270%;
+    width: 100%;
+    background-color: #67223C;
+    background-image: url(themeatcute/backgroundimage.png);
+    object-fit: cover;
+    background-size: 100%;
+}
+
+#page1 {
+    height: 100%;
+    width: 100%;
+}
+
+#firstimage {
+    width: 100%;
+}
+
+#secondimage {
+    height: 70%;
+    width: 50%;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    animation: fade-down 1s .4s;
+
+}
+
+#thirdimage {
+    position: absolute;
+    top: 70%;
+    right: 43%;
+    height: 90%;
+    width: auto;
+
+}
+
+h1 {
+    font-size: 50px;
+    font-family: myfont;
+    position: absolute;
+    top: 83%;
+    left: 55%;
+
+}
+
+p {
+    font-family: "raleway";
+    font-size: 20px;
+    position: absolute;
+    top: 93%;
+    left: 55%;
+    text-align: justify;
+    width: 30%;
+}
+
+h4 {
+    font-family: myfont;
+    font-size: 30px;
+    position: absolute;
+    top: 132%;
+    left: 55%;
+}
+
+#procreate {
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+    position: absolute;
+    margin-right: 20px;
+    top: 140%;
+    left: 55%;
+
+}
+
+#indesign {
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+    position: absolute;
+    top: 140%;
+    left: 61%;
+
+}
+
+#malaipaneer {
+    position: absolute;
+    top: 180%;
+    height: auto;
+    width: 30%;
+    left: 10%;
+
+}
+
+#friedchicken {
+    position: absolute;
+    top: 170%;
+    height: auto;
+    width: 30%;
+    left: 60%;
+
+}
+
+#arrow1 {
+    position: absolute;
+    top: 170%;
+    height: auto;
+    width: 20%;
+    left: 60%;
+    rotate: 200deg;
+
+}
+
+#arrow2 {
+    position: absolute;
+    top: 230%;
+    height: auto;
+    width: 20%;
+    left: 25%;
+    rotate: 10deg;
+
+}
+
+h3 {
+    font-family: myfont;
+    font-size: 48px;
+    position: absolute;
+    top: 225%;
+    left: 35%;
+
+}
+
+h5 {
+    font-family: myfont;
+    font-size: 48px;
+    position: absolute;
+    top: 190%;
+    left: 47%;
+
+}
+
+#page3 {
+    background-color: #F0D7B3;
+    height: 70%;
+    width: 100%;
+}
+
+#pg34 {
+    margin-top: 0;
+    height: auto;
+    position: absolute;
+    top: 250%;
+    left: 5%;
+    width: 90%;
+
+
+}
+
+#pg56 {
+    margin-top: 0;
+    height: auto;
+    position: absolute;
+    top: 350%;
+    left: 5%;
+    width: 90%;
+}
+
+a {
+    text-decoration: none;
+    padding: 6px 14px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+a:hover {
+    color: #000000
+}
+
+.previous {
+    color: #F0D7B3;
+}
+
+.round {
+    border-radius: 50%;
+}
+.fa-solid.fa-circle-left {
+    font-size: 80px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css" />
+  <script
+  src="https://kit.fontawesome.com/2758380a8b.js"
+  crossorigin="anonymous"
+></script>
+  <title>Contact</title>
+  <style>
+    body {
+      font-family: 'Poiret One';
+      padding: 0px;
+      margin: 0px;
+    }
+    h2{
+        text-align: center;
+        padding-bottom: 20px ;
+    }
+    .contact-form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 150px;
+      position: relative;
+    }
+    .input-group {
+      margin-bottom: 15px;
+    }
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      
+    }
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    p{
+      text-align: center;
+      padding-top: 30px;
+    }
+    
+    .contact-form button {
+      
+  background: pink;
+  color: black;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-size: 16px;
+  font-weight:500;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+    }
+  
+.contact-form button:hover{
+  background-color: rgb(255, 54, 101);
+  animation-name: example;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform: scale(1.1);
+
+}
+@keyframes example {
+  0%   {background-color:rgb(255, 167, 188);}
+  25%  {background-color: rgb(170, 234, 135);}
+  50%  {background-color: rgb(120, 203, 255);}
+  100% {background-color: #d394fd;}
+}
+  </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="nav">
+            <div class="navpart1">
+                <h3>vibha sangam</h3>
+            </div>
+            <div class="navpart2">
+                <h4><a href="index.html">Home</a></h4>
+                <h4><a href="work.html">Work</a></h4>
+                <h4><a href="about.html">About</a></h4>
+                <h4><a href="contact.html">Contact</a></h4>
+            </div>
+        </div>
+            <div class="icons">
+                <a href="#" class="instagram"><i class="fa-brands fa-instagram"></i>instagram</a>
+                <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i>whatsapp</a>
+                <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i>linkedin</a>
+            </div>
+      <script src="script.js"></script>
+
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <div class="input-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div class="input-group">
+        <label for="number">Number</label>
+        <input type="text" id="number" name="number">
+      </div>
+      <div class="input-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <button type="submit" onclick="submitForm()">Submit</button>
+      <p id="thank-you" style="display: none;">Thank you for getting in touch! We're eagerly waiting to collaborate with you.</p>
+    </div>
+  
+    <script>
+      function submitForm() {
+        document.getElementById('thank-you').style.display = 'block';
+      }
+    </script>
+  </body>
+  <!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </html>
