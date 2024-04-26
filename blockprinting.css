@@ -121,3 +121,23 @@ a:hover {
 .fa-solid.fa-circle-left {
     font-size: 80px;
 }
+
+
+@media (max-width:600px) {
+    #page1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+        a {
+            text-decoration: none;
+            position: absolute;
+            top: 2%;
+            left: 9%;
+        }
+
+    .fa-solid.fa-circle-left {
+        font-size: 30px;
+    }
+  
+}

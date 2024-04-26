@@ -259,4 +259,25 @@ h1 {
   color: rgb(0, 0, 0);
 }
 
-
+@media (max-width:600px) {
+  .nav {
+    padding: 4vw 4vw;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .navpart2 h4 {
+    padding: 1vw 2vw;
+    border: 0.2px solid rgba(255, 255, 255, 0.802);
+    border-radius: 50px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.835);
+    font-size: 3vw;
+    position: relative;
+    transition: all ease 0.3s;
+    overflow: hidden;
+  }
+}
