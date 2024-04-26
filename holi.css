@@ -1,28 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'raleway';
 }
 
-html, body{
+html,
+body {
     height: 100%;
     width: 100%;
 }
-#main{
-    height: 100%;
-    width: 100%;
 
-}
-#page1{
+#main {
     height: 100%;
+    width: 100%;
+    background-image: url(Holi/bg.png);
+    background-color: #ee3737;
+    background-repeat: no-repeat;
+}
+
+#page1 {
+    height: 100vh;
     width: 100%;
     display: flex;
-    background-image: url(Holi/bg.png);
-    object-fit: cover;
-    background-size: 100%;
+
 }
 
 #content {
@@ -30,48 +33,51 @@ html, body{
     width: 40%;
     align-items: center;
     justify-content: center;
-    margin: 250px 150px;
+    padding-top: 30vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
 }
 
 #content h1 {
-    font-size: 58px;
+    font-size: 4vw;
     font-weight: 500;
+  
 }
 
-#content h2 {
-    font-size: 50px;
-    font-weight: 300;
-}
 
 #content p {
-    font-size: 20px;
+    font-size: 1.3vw;
     font-weight: 300;
     padding: 20px 0;
     text-align: justify;
 }
 
 #content h4 {
-    font-size: 30px;
+    font-size: 3vw;
     font-weight: 400;
     padding: 20px 0;
 }
 
 #content img {
-    height: 70px;
-    width: 70px;
+    height: 5vw;
+    width: 5vw;
     margin-right: 20px;
 }
-#video{
+
+#video {
     height: 100%;
-    width:60%;
+    width: 60%;
     padding: 100px;
-    
+
 }
-#video{
-    height: 820px;
-    width:520px;
-    object-fit:fill;
+
+#video {
+    height: 55vw;
+    width: 35vw;
+    object-fit: fill;
 }
+
 a {
     text-decoration: none;
     padding: 6px 14px;
@@ -91,6 +97,26 @@ a:hover {
 .round {
     border-radius: 50%;
 }
+
 .fa-solid.fa-circle-left {
     font-size: 80px;
+}
+
+@media (max-width:600px) {
+    #page1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+#content {
+    height: 100%;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: #ee3737;
+    text-align: center;
+}
 }
