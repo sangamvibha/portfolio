@@ -217,6 +217,71 @@ a:hover {
 .round {
     border-radius: 50%;
 }
+
 .fa-solid.fa-circle-left {
     font-size: 80px;
+}
+
+@media (max-width:600px) {
+    #secondimage {
+        height: 40%;
+        width: 70%;
+        position: absolute;
+        left: 15%;
+        animation: fade-down 1s .4s;
+    }
+
+    #thirdimage {
+        position: absolute;
+        top: 48%;
+        right: 43%;
+        height: 48%;
+        width: auto;
+    
+    }
+    a {
+        text-decoration: none;
+        position: absolute;
+        top: 15%;
+        left: 9%;
+    }
+
+    .fa-solid.fa-circle-left {
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 25px;
+        font-family: myfont;
+        position: absolute;
+        top: 53%;
+        left: 55%;
+    
+    }
+    
+    p {
+        font-family: "raleway";
+        font-size: 10px;
+        position: absolute;
+        top: 58%;
+        left: 55%;
+        text-align: justify;
+        width: 30%;
+    }
+    
+    h4 {
+        font-family: myfont;
+        font-size: 20px;
+        position: absolute;
+        top: 82%;
+        left: 55%;
+    }
+    #main {
+        height: 100%;
+        width: 100%;
+        background-color: #67223C;
+        background-image: url(themeatcute/backgroundimage.png);
+        object-fit: cover;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
 }
