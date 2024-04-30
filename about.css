@@ -47,8 +47,8 @@ body {
   }
 }
 
-.navpart1 {
-  color: white;
+.navpart1 h3 {
+  color: rgb(255, 255, 255);
   font-size: 30px;
   font-weight: 100;
   animation: fade-down 1s .4s;
@@ -58,7 +58,7 @@ body {
 .navpart1 h3 a {
   font-weight: 100;
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .navpart2 {
@@ -309,7 +309,7 @@ body {
   }
 
   .navpart2 h4 {
-    padding: 1vw 2vw;
+    padding: 3vw 5vw;
     border: 0.2px solid rgba(255, 255, 255, 0.802);
     border-radius: 50px;
     font-weight: 100;
