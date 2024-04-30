@@ -276,12 +276,12 @@ h1 {
     
   }
   .navpart2 h4 {
-    padding: 1vw 2vw;
-    border: 0.2px solid rgba(255, 255, 255, 0.802);
+    padding: 2vw 4vw;
+    border: 0.1px solid rgba(255, 255, 255, 0.802);
     border-radius: 50px;
     font-weight: 100;
     color: rgba(255, 255, 255, 0.835);
-    font-size: 3vw;
+    font-size: 4vw;
     position: relative;
     transition: all ease 0.3s;
     overflow: hidden;
