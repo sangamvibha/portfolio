@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'raleway';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%; 
+}
+a {
+    text-decoration: none;
+    padding: 6px 14px;
+    position: absolute;
+    top: 5%;
+    left: 1%;
+}
+
+a:hover {
+    color: #341600
+}
+
+.previous {
+    color: #000000;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.fa-solid.fa-circle-left {
+    font-size: 80px;
+}
+#main{
+height: 100%;
+width: 100%;
+  
+}
+
+#page1{
+
+    height: 100%;
+    width: 100%; 
+    background-image: url(adozen/IMG_2230.HEIC);
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    color: rgb(0, 68, 27);
+    padding-top: 3vw;
+    padding-left: 10vw;
+}
+
+#page1 h2{
+  
+font-size: 4vw;
+font-weight: 500;
+
+}
+#page1 h3{
+   
+    font-size: 2vw;
+    font-weight: 500;
+    }
+    @media (max-width:600px) {
+
+        #page1{
+
+    height: 100%;
+    width: 100%; 
+    background-image: url(adozen/IMG_2230.HEIC);
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    color: rgb(0, 68, 27);
+    padding-top: 20vw;
+    padding-left: 20vw;
+}
+#page1 h2{
+  
+    font-size: 7vw;
+    font-weight: 500;
+    
+    }
+    #page1 h3{
+       
+        font-size: 5vw;
+        font-weight: 500;
+        }
+    }

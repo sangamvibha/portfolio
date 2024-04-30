@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'raleway';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+#heart1,#heart2{
+position: absolute;
+left: 31.5%;
+top: 21%;
+}
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #F9F3E4;
+}
+
+#page1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+
+#content {
+    height: 100%;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+}
+
+#content h1 {
+    font-size: 3vw;
+    font-weight: 500;
+
+}
+
+
+#content p {
+    font-size: 1.3vw;
+    font-weight: 300;
+    padding: 20px 0;
+    text-align: justify;
+}
+
+#content h4 {
+    font-size: 3vw;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+#content img {
+    height: 5vw;
+    width: 5vw;
+    margin-right: 20px;
+}
+
+#video {
+    height: 100%;
+    width: 60%;
+    padding: 100px;
+
+}
+
+#video {
+    height: 55vw;
+    width: 35vw;
+    object-fit: fill;
+}
+
+a {
+    text-decoration: none;
+    padding: 6px 14px;
+    position: absolute;
+    top: 12%;
+    left: 9%;
+}
+
+a:hover {
+    color: #ee3737
+}
+
+.previous {
+    color: #000000;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.fa-solid.fa-circle-left {
+    font-size: 80px;
+}
+
+@media (max-width:600px) {
+    #page1 {
+        display: flex;
+        flex-direction: column;
+    }
+    #content h1 {
+        font-size: 5vw;
+        font-weight: 500;
+    
+    }
+    #content {
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 10vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    #video {
+        height: 100vw;
+        width: 100vw;
+        object-fit: fill;
+        padding-top: 10vw;
+
+    }
+        a {
+            text-decoration: none;
+            position: absolute;
+            top: 2%;
+            left: 9%;
+        }
+
+    .fa-solid.fa-circle-left {
+        font-size: 30px;
+    }
+    #content img {
+        height: 5vw;
+        width: 5vw;
+        margin-top: 0;
+        margin-right: 5px;
+       
+    }
+    #content h4 {
+        font-size: 3vw;
+        font-weight: 400;
+        padding: 10px 0;
+    }
+    #content p {
+        font-size: 2vw;
+        font-weight: 300;
+        padding: 2vw 0;
+        text-align: justify;
+    }
+    #heart1,#heart2{
+        position: absolute;
+        width: 10%;
+        height: 10%;
+        left: 70%;
+        top: 4%;
+        }
+        #heart2{
+            rotate: 10deg;
+            left: 77%;
+        }
+}

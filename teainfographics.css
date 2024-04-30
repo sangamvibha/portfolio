@@ -16,6 +16,8 @@ body {
 #main {
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #page1 {
@@ -26,17 +28,18 @@ body {
 
 #content {
     height: 100%;
-    width: 100%;
     align-items: center;
     justify-content: center;
-    padding-left: 100px;
-    padding-top: 150px;
-    padding-right: 100px;
+    padding-left: 10vw;
+    padding-top: 10vw;
+    padding-right: 5vw;
+    width: 50%;
+    float: left;
 }
 
 #title {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 2vw;
 }
 
 #title h1 {
@@ -64,7 +67,7 @@ body {
 }
 
 
-#content>h1 {
+#para>h1 {
     font-size: 30px;
     font-weight: 200;
 }
@@ -74,20 +77,19 @@ body {
     font-weight: 300;
 }
 
-#content p {
+#para p {
     font-size: 20px;
     font-weight: 300;
-    padding: 10px 0;
     text-align: justify;
 }
 
-#content h4 {
+#para h4 {
     font-size: 30px;
     font-weight: 200;
     padding: 20px 0;
 }
 
-#content>img {
+#para>img {
     height: 70px;
     width: 70px;
     margin-right: 20px;
@@ -96,16 +98,17 @@ body {
 #illustration {
     height: 100%;
     width: 50%;
-    padding-top: 50px;
-    padding-left: 50px;
-    /* background-color: rgb(232, 232, 232); */
+    object-fit: contain;
+    float: right;
+    overflow: hidden;
 }
 
 #illustration img {
-    padding-top: 30px;
-    transform: translate(-8%, 0%);
-    height: 810px;
-    width: 810px;
+    padding-top: 2vw;
+    padding-left: 3vw;
+    padding-right: 0;
+    height: 100%;
+    width: auto;
 }
 
 #page2 {
@@ -137,39 +140,15 @@ body {
     padding-left: 13px;
 }
 
-#imagerow1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#imagerow1>img {
-    height: 350px;
-    width: 250px;
-    margin: 6px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    opacity: 92%;
-}
-
-#imagerow2>img {
-    height: 350px;
-    width: 250px;
-    margin: 6px;
-    margin-right: 10px;
-}
-
-#imagerow2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 100px;
+#IR{
+    width: 80%;
+    margin: 0 auto; 
+    display: block; 
 }
 
 #page3 {
     height: 100%;
     width: 100%;
-    background-color: blueviolet;
     object-fit: cover;
 }
 
@@ -179,32 +158,11 @@ body {
 }
 
 #firstimage {
-    height: 600px;
-    width: 450px;
+    height: auto;
+    width: 30%;
     position: absolute;
     top: 105%;
     left: 10%;
-}
-
-#thirdimage {
-    rotate: 3deg;
-    opacity: 100%;
-}
-
-#secondimage {
-    height: 700px;
-    width: 650px;
-    position: absolute;
-    top: 207%;
-    left: 60%;
-}
-
-#fourthimage {
-    opacity: 92%;
-}
-
-#fifthimage {
-    opacity: 92%;
 }
 
   a {
@@ -228,4 +186,135 @@ a:hover {
 }
 .fa-solid.fa-circle-left {
     font-size: 80px;
+}
+@media (max-width:600px) {
+    a {
+        text-decoration: none;
+        position: absolute;
+        top: 8%;
+        left: 9%;
+    }
+
+    .fa-solid.fa-circle-left {
+        font-size: 30px;
+    }
+    #page1{
+        height: 300%;
+        display: flex;
+        flex-direction: column;
+    }
+    #content {
+        height: 50%;
+        width: 100%;
+        padding-left: 30vw;
+        padding-right: 20vw;
+
+    }
+    #title {
+        display: flex;
+
+    }
+    
+    #title h1 {
+        font-size: 20vw;
+        font-weight: 200;
+        font-family: 'barlow condensed';
+        line-height: .9;
+        padding-left: 2vw;
+        
+    }
+    
+    #title h2 {
+        font-size: 10vw;
+        font-weight: 300;
+        font-family: 'barlow condensed';
+        line-height: 0.75;
+    
+    }
+    #title h3 {
+        font-size: 8vw;
+        font-weight: 300;
+        font-family: 'barlow condensed';
+    
+    }
+    
+    #para>h1 {
+        font-size: 4vw;
+        font-weight: 300;
+        margin-bottom: 2vw;
+    }
+    
+    #content>h2 {
+        font-size: 50px;
+        font-weight: 300;
+    }
+    
+    #para p {
+        
+        font-size: 2vw;
+        font-weight: 300;
+        text-align: justify;
+    }
+    
+    #para>h4 {
+        font-size: 3vw;
+        font-weight: 300;
+    }
+    
+    #para>img {
+        height: 6vw;
+        width: 6vw;
+        margin-right: 2vw;
+    }
+    
+    #illustration {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        overflow: hidden;
+        padding-bottom: 2vw;
+    }
+    
+    #illustration img {
+        height: 100%;
+        width: 110%;
+    }
+    #page2 {
+        background-color: black;
+        color: white;
+        padding-right: 20vw;
+        padding-left: 20vw;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #page2 h2 {
+        font-size: 4vw;
+        font-weight: 100;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    
+    #page2 p {
+        font-size: 2vw;
+        font-weight: 100;
+        text-align: justify;
+        padding-bottom: 30px;
+    }
+    
+    #page2 h4 {
+        font-size: 25px;
+        font-weight: 100;
+        text-align: justify;
+        padding-left: 13px;
+    }
+    #firstimage {
+        height: auto;
+        width: 30%;
+        position: absolute;
+        top: 138%;
+        left: 5%;
+    }
 }

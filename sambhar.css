@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #f0cd64;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Sambhar/effect\ copy.png);
+    background-size: cover;
+}
+#content{
+    text-align: center;
+    width: 40%;
+   display: block;
+   margin-top: 10vw;
+}
+#content h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color: #2C3563;
+
+}
+
+#content p {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 0;
+    text-align: justify;
+    color: #2C3563;
+}
+
+#content h4 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 20px 0;
+    color: #2C3563;
+    text-align: left;
+}
+#content img {
+    height: 70px;
+    width: 70px;
+    margin-right: 20px;
+    float: left;
+}
+a {
+    text-decoration: none;
+    padding: 6px 14px;
+    position: absolute;
+    top: 12%;
+    left: 3%;
+}
+
+a:hover {
+    color: #2C3563
+}
+
+.previous {
+    color: #000000;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.fa-solid.fa-circle-left {
+    font-size: 80px;
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    background-color: #2C3563;
+    background-image: url(Sambhar/Untitled_Artwork\ 6.png);
+    background-size:cover;
+}
+#page2 h2{
+    font-size: 2vw;
+    padding: 2vw;
+    color: #f0cd64;
+}
+.imagecontainer{
+    position: relative;
+    display: flex;
+}
+.original-image{
+    width: 25vw;
+    height: auto;
+    opacity: 0.98;
+}
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    width: 25vw;
+    height: auto;
+}
+
+.imagecontainer:hover .hover-image {
+    opacity: 1;
+}
+@media (max-width:600px) {
+    #page1 {
+        height: 50vh;
+    }
+    #page2 {
+        height: 50vh;
+    }
+    a {
+        text-decoration: none;
+        position: absolute;
+        top: 3%;
+        left: 6.2%;
+    }
+
+    .fa-solid.fa-circle-left {
+        font-size: 30px;
+    }
+    #content{
+        text-align: center;
+        width: 40%;
+       display: block;
+       margin-top: 1vw;
+       
+    }
+    #content h1 {
+        font-size: 3vw;
+        font-weight: 900;
+        color: #2C3563;
+ 
+    }
+    
+    #content p {
+        font-size: 1.5vw;
+        font-weight: 300;
+        text-align: justify;
+        color: #2C3563;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+    
+    #content h4 {
+        font-size: 2vw;
+        font-weight: 400;
+        color: #2C3563;
+        text-align: left;
+        padding: 1vw;
+    }
+    #content img {
+        margin-top: 0;
+        height: 4vw;
+        width: 4vw;
+        float: left;
+    }
+    }

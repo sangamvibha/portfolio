@@ -61,11 +61,7 @@ body {
   }
 }
 
-.page {
-  height: 100vh;
-  width: 100px;
-  position: relative;
-}
+
 
 @keyframes fade-down {
   0% {
@@ -145,6 +141,7 @@ body {
   color: black;
 }
 
+
 .center {
   height: 100%;
   width: 100%;
@@ -158,28 +155,27 @@ body {
   top: 25%;
   left: 5%;
   width: 800px;
-  font-size: 14vw;
+  font-size: 10vw;
   line-height: 78px;
   font-weight: 200;
   color: rgb(255, 152, 169);
   animation: fade-down 1s .4s;
 
 }
-
-.left h2 {
-  position: absolute;
-  top: 15%;
-  left: 5%;
-  width: 800px;
-  font-size: 5vw;
-  line-height: 40px;
-  font-weight: 500;
-  color: pink;
-  animation: fade-down 1s .4s;
-  text-transform: lowercase;
+.portfolio a{
+  text-decoration: none;
+  color: rgb(255, 152, 169);
 }
 
 @media (max-width:600px) {
+  .center {
+    margin-top: 250px;
+    height: 100%;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 2vw;
+  }
   .nav {
     padding: 3vw 5vw;
   }
@@ -193,29 +189,39 @@ body {
     font-size: 4vw;
   }
   .left h2 {
-    font-size: 3vw;
-    line-height: 3.5vw;
-    position: absolute;
-    top: 15%;
-    left: 5%;
-    font-weight: 100;
-  }
-  .left h1 {
-    position: absolute;
-    top: 21%;
-    left: 5%;
-    font-size: 7vw;
-    line-height: 7vw;
+    font-size: 0vw;
     
   }
-  .mousescroll {
-    width: 30px;
-    height: 55px;
-    border: solid 2px pink;
-    border-radius: 30px;
-    position: absolute;
-    top: 20%;
-    left: 90%;
-    animation: scroll 2s;
+  .left h1 {
+    
+    font-size: 0vw;
   }
+  .mousescroll {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  .mousescroll::before {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  .arrow-scroll {
+    height: 0px;
+    opacity: 0;
+  }
+  @keyframes scroll {
+    0% {
+      bottom: 0%;
+      opacity: 0;
+    }
+  
+    0% {
+      bottom: 0%;
+      opacity: 0;
+    }
+  }
+ 
+
+  
 }

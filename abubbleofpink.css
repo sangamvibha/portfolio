@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'raleway';
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%; 
+}
+a {
+    text-decoration: none;
+    padding: 6px 14px;
+    position: absolute;
+    top: 5%;
+    left: 1%;
+}
+
+a:hover {
+    color: #341600
+}
+
+.previous {
+    color: #000000;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.fa-solid.fa-circle-left {
+    font-size: 80px;
+}
+
+#page1{
+    height: 100%;
+    width: 100%; 
+    background-image: url(abubbleofpink/final.png);
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+#page1 a{
+    margin-top: 10vw;
+    margin-left: 30vw;
+    display: block;
+    height: 60%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1000px;
+}

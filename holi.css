@@ -17,12 +17,12 @@ body {
     height: 100%;
     width: 100%;
     background-image: url(Holi/bg.png);
-    background-color: #ee3737;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 #page1 {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
 
@@ -107,14 +107,17 @@ a:hover {
         display: flex;
         flex-direction: column;
     }
-
+    #content h1 {
+        font-size: 5vw;
+        font-weight: 500;
+    
+    }
     #content {
         height: 100%;
         width: 100%;
         align-items: center;
         justify-content: center;
         text-align: center;
-        background-color: aqua;
         padding-top: 10vh;
         padding-left: 10vw;
         padding-right: 10vw;

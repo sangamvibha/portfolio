@@ -1,97 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'raleway';
+    font-family: 'raleway';
 }
-html, body{
+
+html,
+body {
     height: 100%;
     width: 100%;
 
 }
-#main{
+
+#main {
     height: 100%;
     width: 100%;
 
 }
-#page1{
+
+#page1 {
     height: 127%;
     width: 100%;
     background-image: url(tapebag/Bg.png);
     background-size: cover;
-   background-color: #BDD5D4;
+    background-color: #BDD5D4;
 }
-#content h1{
+
+#content h1 {
     text-align: center;
     font-size: 80px;
     font-weight: 800;
     padding: 100px 20px;
 }
+
 #content img {
     height: 70px;
     width: 70px;
     margin-right: 20px;
 }
-#about{
-   color: rgb(0, 0, 0);
+
+#about {
+    color: rgb(0, 0, 0);
     padding: 50px;
     height: 100%;
     width: 35%;
     position: absolute;
     top: 40%;
 }
-#about h3{
+
+#about h3 {
     font-size: 50px;
     font-weight: 500;
     padding-bottom: 20px;
 }
-#about p{
+
+#about p {
     font-size: 20px;
     font-weight: 500;
     color: rgb(255, 255, 255);
     text-shadow: 2px 0px 20px rgb(0, 0, 0);
     text-align: justify;
 }
-#about h4{
+
+#about h4 {
     font-size: 30px;
     font-weight: 500;
     padding-bottom: 20px;
     padding-top: 20px;
 }
-#page3 h1{
+
+#page3 h1 {
     text-align: center;
     font-size: 80px;
     font-weight: 800;
     padding-top: 50px;
     padding-bottom: 30px;
 }
-#sbs{
+
+#sbs {
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
 }
-#row1{
-    display: flex;
-    padding-bottom: 10px;
-}
-#row2{
+
+#row1 {
     display: flex;
 }
-#page2 img{
+
+#row2 {
+    display: flex;
+}
+
+#page2 img {
     height: 500px;
     width: 800px;
 }
-#bees1{
+
+#bees1 {
     position: absolute;
     top: 50%;
     left: 20%;
     height: auto;
     width: 100%;
 }
-#bees8{
+
+#bees8 {
     position: absolute;
     top: 40%;
     left: 20%;
@@ -100,7 +116,7 @@ html, body{
     rotate: 40deg;
 }
 
-#bees9{
+#bees9 {
     position: absolute;
     top: 50%;
     left: 40%;
@@ -108,7 +124,8 @@ html, body{
     width: 100%;
     rotate: 180deg;
 }
-#bees3{
+
+#bees3 {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -116,14 +133,15 @@ html, body{
     width: 100%;
 }
 
-#bees5{
+#bees5 {
     position: absolute;
     top: 40%;
     left: 15%;
     height: auto;
     width: 100%;
 }
-#bees6{
+
+#bees6 {
     position: absolute;
     top: 40%;
     left: 30%;
@@ -131,7 +149,8 @@ html, body{
     width: 100%;
     rotate: 20deg;
 }
-#bees7{
+
+#bees7 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -139,44 +158,49 @@ html, body{
     width: 100%;
     rotate: 50deg;
 }
-#page3{
+
+#page3 {
     height: 110%;
     width: 100%;
+    background-color: #f9f5e6;
+
 }
-#page3 img{
-    height:300px;
+
+#page3 img {
+    height: 300px;
     width: 400px;
-    padding: 20px;
+    border-radius: 2vw;
+    margin: 1vw;
 }
-#shotlist{
+
+#shotlist {
     height: auto;
     width: 20%;
 }
 
-#page4{
+#page4 {
     height: 105%;
-    width:100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     background-color: black;
 }
-#page4 h2{
+
+#page4 h2 {
     text-align: center;
     padding-top: 50px;
     font-size: 50px;
     font-weight: 300;
     color: white;
     text-transform: uppercase;
-
 }
-.tapebagvideo{
+
+.tapebagvideo {
     height: 600px;
     width: 800px;
     object-fit: cover;
-    position: absolute;
-    top: 295%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    display: block;
 }
 
 a {
@@ -198,6 +222,131 @@ a:hover {
 .round {
     border-radius: 50%;
 }
+
 .fa-solid.fa-circle-left {
     font-size: 80px;
+}
+
+@media (max-width:600px) {
+
+    #page1 {
+        height: 100%;
+        width: 100%;
+        background-image: url(tapebag/Bg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-bottom: 0;
+    }
+
+    #page1 {
+        text-align: center;
+    }
+
+    #about {
+        color: rgb(0, 0, 0);
+        padding: 50px;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 60%;
+    }
+
+    a {
+        text-decoration: none;
+        position: absolute;
+        top: 3%;
+        left: 6.2%;
+    }
+
+    .fa-solid.fa-circle-left {
+        font-size: 30px;
+    }
+
+    #content h1 {
+        text-align: center;
+        font-size: 8vw;
+        font-weight: 800;
+        padding: 15vw 20px;
+    }
+
+    #about h3 {
+        font-size: 3vw;
+        font-weight: 600;
+        padding-bottom: 20px;
+    }
+
+    #about p {
+        font-size: 2vw;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+        text-shadow: 0 0 0;
+        text-align: justify;
+    }
+
+        #bees1, #bees3, #bees5, #bees6, #bees7, #bees8, #bees9 {
+            display: none; 
+        }
+    #about h4 {
+        font-size: 3vw;
+        font-weight: 600;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    #page3 {
+        height: 42%;
+        width: 100%;
+    }
+
+    #page3 h1 {
+        text-align: center;
+        font-size: 80px;
+        font-weight: 800;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        margin-top: 0;
+    }
+
+    #content img {
+        height: 6vw;
+        width: 6vw;
+        margin-right: 2vw;
+    }
+
+
+
+    #sbs {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #row1 {
+        display: flex;
+    }
+
+    #row2 {
+        display: flex;
+    }
+
+    #page3 h1 {
+        font-size: 5vw;
+    }
+
+    #page3 img {
+        height: 20vw;
+        width: auto;
+        border-radius: 2vw;
+        margin: 1vw;
+    }
+    #page4 h2{
+        font-size:5vw ;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+
+    .tapebagvideo {
+        max-width: 90%;
+    }
 }

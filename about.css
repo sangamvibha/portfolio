@@ -18,7 +18,7 @@ body {
    
   }
   .nav {
-    padding: 40px 75px;
+    padding: 2vw 3vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,7 +93,7 @@ body {
 .icons a {
   text-decoration: none;
   padding: 20px;
-  font-size: 22px;
+  font-size: 1vw;
   font-family: 'Raleway';
   margin: 2px;
   text-align: left;
@@ -202,37 +202,7 @@ body {
   line-height: 28px;
   letter-spacing: 1px;
 }
-.about button{
-  background: pink;
-  color: black;
-  text-decoration: none;
-  border: 2px solid transparent;
-  font-size: 16px;
-  font-weight:900;
-  padding: 13px 30px;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-}
 
-.about button:hover{
-  background-color: rgb(255, 54, 101);
-  animation-name: example;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  transform: scale(1.1);
-
-}
-@keyframes example {
-  0%   {background-color:rgb(255, 167, 188);}
-  25%  {background-color: rgb(170, 234, 135);}
-  50%  {background-color: rgb(120, 203, 255);}
-  100% {background-color: #d394fd;}
-}
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
 .image {
   display: block;
@@ -241,6 +211,7 @@ body {
   height: 50%; /* Adjust the height as needed */
   overflow: hidden;
   margin: 5px;
+
 }
 
 .image img {
@@ -249,25 +220,3 @@ body {
   object-fit: contain;
 }
 
-.overlay {
-  position: absolute;
-  top: -100%; /* Start the overlay above the image */
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Adjust the transparency as needed */
-  transition: top 0.3s; /* Add a smooth transition for the overlay animation */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.image:hover .overlay {
-  top: 0; /* Move the overlay down on hover */
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-}
