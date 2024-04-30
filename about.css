@@ -189,8 +189,8 @@ body {
   justify-content: center;
   padding-top: 30vh;
   padding-left: 10vw;
-  padding-right: 10vw;
-  color: white;
+  padding-right: 0;
+    color: white;
 
 }
 
@@ -203,7 +203,7 @@ body {
 
 
 #content p {
-  font-size: 1vw;
+  font-size: 1.5vw;
   font-weight: 300;
   padding: 20px 0;
   text-align: justify;
