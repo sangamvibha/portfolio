@@ -17,6 +17,7 @@ body {
     height: 100%;
     width: 100%;
 background-color: #eabbc1;
+display: inline-block;
 }
 
 #page1 {
@@ -141,10 +142,9 @@ a:hover {
         font-size: 30px;
     }
     #content img {
-        height: 5vw;
-        width: 5vw;
+        height: 4vw;
+        width: 4vw;
         margin-top: 0;
-        margin-right: 5px;
        
     }
     #content h4 {
