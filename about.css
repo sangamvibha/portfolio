@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'raleway';
+  font-family: 'Raleway', sans-serif;
 }
 
 html,
@@ -19,10 +19,181 @@ body {
   background-color: #000000;
 }
 
-#page1 {
-  height: 100%;
-  width: 100%;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+  font-family: 'Vestaly', sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.left {
+  flex: 1;
+  text-align: center;
+}
+
+.right {
+  flex: 1;
+  padding: 20px;
+  text-align: justify;
+  font-family: 'raleway', sans-serif;
+  color: white;
+}
+
+.right h2 {
+  font-size: 3vw;
+  color: pink;
+  padding-bottom: .01vw;
+  font-weight: 800;
+}
+
+.right h3 {
+  font-size: 2vw;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  padding-bottom: 1vw;
+}
+
+.right p {
+  font-size: 1vw;
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  object-fit: fill;
+  padding-bottom: 4vw;
+}
+
+.right h4 a {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  font-size: 1.5vw;
+  padding: 1vw 2vw;
+  border: 0.5px solid rgba(255, 255, 255, 0.802);
+  border-radius: 10px;
+}
+
+.right h4 a:hover {
+  background-color: pink;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform: scale(1.1);
+  border: 0px;
+  color: black;
+  font-weight: 300;
+}
+
+@keyframes example {
+  0% {
+    background-color: pink
+  }
+
+  25% {
+    background-color: rgb(254, 173, 187)
+  }
+
+  50% {
+    background-color: rgb(255, 160, 176)
+  }
+
+  100% {
+    background-color: rgb(252, 102, 127)
+  }
+}
+
+img {
+  height: 400px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50px;
+  object-fit: cover;
+  object-position: 0 -30px;
+  
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  img {
+    height: 240px;
+    max-width: 200px;
+    border-radius: 100px;
+    object-position: 0 -10px;
+  }
+  .right h2 {
+    font-size: 6vw;
+    color: pink;
+    padding-bottom: .01vw;
+    font-weight: 800;
+  }
+  
+  .right h3 {
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    padding-bottom: .5vw;
+  }
+  
+  .right p {
+    font-size: 3vw;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    object-fit: fill;
+    padding-top: 1vw;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    padding-bottom: 6vw;
+    text-align: justify;
+  }
+  
+  .right h4 a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 4vw;
+    padding: 2vw 4vw;
+    border: 0.5px solid rgba(255, 255, 255, 0.802);
+    border-radius: 10px;
+  }
+  
+  .right h4 a:hover {
+    background-color: pink;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform: scale(1.1);
+    border: 0px;
+    color: black;
+    font-weight: 300;
+  }
 }
 
 .nav {
@@ -32,7 +203,7 @@ body {
   position: absolute;
   justify-content: space-between;
   align-items: center;
-
+  font-family: '', sans-serif;
 }
 
 @keyframes fade-down {
@@ -121,7 +292,7 @@ body {
   text-decoration: none;
   padding: 20px;
   font-size: 1vw;
-  font-family: 'Raleway';
+  font-family: 'Rudiment', sans-serif;
   margin: 2px;
   text-align: left;
   border-radius: 50px 0px 0px 50px;
@@ -182,121 +353,10 @@ body {
   color: rgb(0, 0, 0);
 }
 
-#content {
-  height: 100%;
-  width: 50%;
-  align-items: center;
-  justify-content: center;
-  padding-top: 30vh;
-  padding-left: 10vw;
-  padding-right: 0;
-    color: white;
-
-}
-
-#content h1 {
-  font-size: 3vw;
-  font-weight: 800;
-  color: pink;
-
-}
 
 
-#content p {
-  font-size: 1.5vw;
-  font-weight: 300;
-  padding: 20px 0;
-  text-align: justify;
-}
+@media (max-width:768px) {
 
-#content h2 {
-  font-size: 2vw;
-  font-weight: 100;
-}
-
-#content h4 {
-  font-size: 2vw;
-  font-weight: 400;
-  padding: 20px 0;
-}
-
-#content img {
-  height: 4vw;
-  width: 4vw;
-  margin-right: 20px;
-}
-
-#image {
-  height: 100vh;
-}
-
-#image img {
-  padding: 10vw;
-  height: 100vh;
-  width: auto;
-
-}
-
-@media (max-width:600px) {
-  #page1 {
-    display: flex;
-    flex-direction: column-reverse;
-    height: 100vh;
-  }
-
-  #content h1 {
-    font-size: 5vw;
-    font-weight: 800;
-
-  }
-
-  #content h2 {
-    font-size: 5vw;
-
-  }
-
-  #content {
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 0;
-  }
-
-  #image {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-  }
-
-  #image img {
-    margin-top: 10vh;
-    margin-bottom: 2vh;
-    height: 60vh;
-    width: auto;
-  }
-
-  #content img {
-    height: 5vw;
-    width: 5vw;
-
-  }
-
-  #content h4 {
-    font-size: 3vw;
-    font-weight: 400;
-    padding: 10px 0;
-  }
-
-  #content p {
-    font-size: 2vw;
-    font-weight: 300;
-    padding: 2vw 0;
-    text-align: justify;
-  }
 
   .nav {
     padding: 4vw 4vw;
@@ -324,7 +384,7 @@ body {
     text-decoration: none;
     padding: 20px;
     font-size: 2.5vw;
-    font-family: 'Raleway';
+    font-family: 'Rudiment', sans-serif;
     margin: 2px;
     text-align: left;
     border-radius: 50px 0px 0px 50px;

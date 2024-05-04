@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2758380a8b.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/warm-winter" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <div class="page">
         <div class="nav">
@@ -19,28 +22,50 @@
             </div>
         </div>
         <div class="icons">
-            <a href="https://www.instagram.com/abubbleofpink?igsh=ZTVkb3FwbnYzY2Yz&utm_source=qr" class="instagram"><i class="fa-brands fa-instagram"></i>instagram</a>
+            <a href="https://www.instagram.com/abubbleofpink?igsh=ZTVkb3FwbnYzY2Yz&utm_source=qr" class="instagram"><i
+                    class="fa-brands fa-instagram"></i>instagram</a>
             <a href="#" class="whatsapp"><i class="fa-solid fa-envelope-open-text"></i></i>sangamvibhaa@gmail.com</a>
-            <a href="www.linkedin.com/in/vibha-sangam-a45739302" class="linkedin"><i class="fa-brands fa-linkedin"></i>linkedin</a>
+            <a href="www.linkedin.com/in/vibha-sangam-a45739302" class="linkedin"><i
+                    class="fa-brands fa-linkedin"></i>linkedin</a>
         </div>
-    <div class="container">
-        <div class="text">
-            <h1>MY PORTFOLIO</h1>
+             
+        <div class="container">
+            <div class="text">
+                <h1>MY PORTFOLIO</h1>
+            </div>
+            <div class="filters">
+                <button class="filter-button ative" data-filter="all">Portfolio</button>
+                <button class="filter-button" data-filter="animation">Animation</button>
+                <button class="filter-button" data-filter="illustration">Illustration</button>
+                <button class="filter-button" data-filter="videoediting">Video Editing</button>
+            </div>   
+                <div class="grid">
+                    <div class="box" data-category="illustration" style="background-image: url(Portfolio-gallery/Page_5.png);"><a
+                            href="themeatcute.html">The Meat Cute</a></div>
+                    <div class="box  col-2" data-category="videoediting" style="background-image: url(Portfolio-gallery/4.png);"> <a
+                            href="blockprinting.html">Block Printing</a></div>
+                    <div class="box row-2" data-category="illustration"
+                        style="background-image: url(Portfolio-gallery/teaInfographics.png);"> <a
+                            href="teainfographics.html">I've Got <br> Some Tea</a></div>
+                    <div class="box row-2" data-category="illustration" style="background-image: url(Portfolio-gallery/cards1.png);"> <a
+                            href="inmyhead.html">In my head</a></div>
+                    <div class="box row-2" data-category="animation"
+                        style="background-image: url(Portfolio-gallery/Valentin\'s\ Day.png);"> <a
+                            href="valentine.html">Valentine's Day</a></div>
+                    <div class="box" data-category="illustration" style="background-image: url(Portfolio-gallery/dozen.png);"> <a
+                            href="dozen.html">A Dozen Little Tinklings</a></div>
+                    <div class="box" data-category="animation" style="background-image: url(Portfolio-gallery/bg.png);"> <a
+                            href="holi.html">Holi</a></div>
+                    <div class="box" data-category="illustration"
+                        style="background-image: url(Portfolio-gallery/Sambhar\ Tragedy.png);"> <a
+                            href="sambhar.html">The Sambhar Tragedy</a></div>
+                    <div class="box col-2" data-category="animation" style="background-image: url(Portfolio-gallery/1.png);"> <a
+                            href="tapebag.html">that world is doomed right?</a></div>
+                    <div class="box col-2" data-category="videoediting" style="background-image: url(Portfolio-gallery/abubbleofpink.jpg);">
+                        <a href="abubbleofpink.html">abubbleofpink</a></div>
+                </div>
         </div>
-        <div class="gallery">
-            <div class="box" style="background-image: url(Portfolio-gallery/Page_5.png);"><a href="themeatcute.html">The Meat Cute</a></div>
-            <div class="box col-2" style="background-image: url(Portfolio-gallery/4.png);"> <a href="blockprinting.html">Block Printing</a></div>
-            <div class="box row-2" style="background-image: url(Portfolio-gallery/teaInfographics.png);"> <a href="teainfographics.html">I've Got <br> Some Tea</a></div>
-            <div class="box row-2" style="background-image: url(Portfolio-gallery/cards1.png);"> <a href="inmyhead.html">In my head</a></div>
-            <div class="box row-2" style="background-image: url(Portfolio-gallery/Valentin\'s\ Day.png);"> <a href="valentine.html">Valentine's Day</a></div>
-            <div class="box" style="background-image: url(Portfolio-gallery/dozen.png);"> <a href="dozen.html">A Dozen Little Tinklings</a></div>
-            <div class="box" style="background-image: url(Portfolio-gallery/bg.png);"> <a href="holi.html">Holi</a></div>
-            <div class="box" style="background-image: url(Portfolio-gallery/Sambhar\ Tragedy.png);"> <a href="sambhar.html">The Sambhar Tragedy</a></div>
-            <div class="box col-2" style="background-image: url(Portfolio-gallery/1.png);"> <a href="tapebag.html">that world is doomed right?</a></div>
-            <div class="box col-2" style="background-image: url(Portfolio-gallery/abubbleofpink.jpg);"> <a href="abubbleofpink.html">abubbleofpink</a></div>
-           
-            
-    </div>
-</div>
+        <script src="script.js"></script>
 </body>
+
 </html>
