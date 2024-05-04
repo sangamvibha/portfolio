@@ -6,8 +6,9 @@
   box-sizing: border-box;
 }
 
-body {
+html,body {
   font-family: 'raleway';
+  background-color: black;
 }
 
 .page {
