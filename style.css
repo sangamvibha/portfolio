@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/warm-winter');
+@font-face
+{
+  font-family: myfont2;
+  src: url(WarmWinter-3lzjL.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
 html,body {
@@ -38,19 +44,24 @@ html,body {
   transition: 1s;
   animation: fade-down 1s .4s;
   text-align: center;
+ 
 }
 
 .text {
   flex-basis: 30%;
-  padding: 20px;
+  padding: 0px;
+  margin: 0px;
   text-align: center;
 }
 
 h1 {
-  color: white;
-  font-size: 60px;
+  font-family: myfont2;
+  color: pink;
+  font-size: 10vw;
   font-weight: 100;
   text-align: center;
+  text-transform: lowercase;
+  letter-spacing: .2vw;
   animation: fade-down 1s .4s;
 }
 
@@ -63,6 +74,7 @@ h1 {
   border-radius: 20px;
   transition: all .5s ease-in-out;
   cursor: pointer;
+ 
 }
 
 .box a {
@@ -110,23 +122,22 @@ h1 {
   margin: 0 5px;
   font-size: 1.5vw;
   font-weight: 100;
-  color: #ffffff;
+  color: #fffbf5;
   background-color: black;
   border: none;
-  border-radius: 50px;
+  border-radius: 20px;
   cursor: pointer;
-  transition: background-color 1s ease, transform 0.5s ease;
+  transition: background-color 1s ease-in-out;
 }
 
 .filter-button:hover {
-  border: 0.5px solid rgba(255, 255, 255, 0.802);
-  border-radius: 50px;
+  border-radius: 20px;
   font-weight: 400;
 }
 
 .filters .filter-button.active {
-  color: black;
-  background-color: #fffffff1;
+  color: #ff8aa3;
+
   font-weight: 400;
 }
 
@@ -153,8 +164,8 @@ h1 {
 }
 
 .navpart1 {
-  color: white;
-  font-size: 30px;
+  color: #fffbf5;
+  font-size: 3vw;
   font-weight: 100;
   animation: fade-down 1s .4s;
   text-decoration: none;
@@ -163,7 +174,9 @@ h1 {
 .navpart1 h3 a {
   font-weight: 100;
   text-decoration: none;
-  color: white;
+  color: #fffbf5;
+  letter-spacing: .2vw;
+  font-family: myfont2;
 }
 
 .navpart2 {
@@ -171,15 +184,16 @@ h1 {
   align-items: center;
   gap: 1vw;
   animation: fade-down 1s .4s;
+  font-family: myfont2;
 }
 
 .navpart2 h4 {
   padding: 10px 20px;
-  border: 0.5px solid rgba(255, 255, 255, 0.802);
-  border-radius: 50px;
+  border: 0.5px solid #fffbf5;
+  border-radius: 20px;
   font-weight: 100;
-  color: rgba(255, 255, 255, 0.835);
-  font-size: 20px;
+  color: #fffbf5;
+  font-size: 2.5vw;
   position: relative;
   transition: all ease 0.3s;
   overflow: hidden;
@@ -190,11 +204,12 @@ h1 {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: white;
+  background-color:#ff8aa3;
   left: 0;
-  bottom: -100%;
+  bottom: -110%;
   border-radius: 50%;
   transition: all ease 0.3s;
+  border: 0.5px solid #ff8aa3;
 }
 
 .navpart2 h4:hover::after {
@@ -215,7 +230,7 @@ h1 {
 
 .icons {
   position: fixed;
-  top: 39%;
+  top: 45%;
   right: 0%;
   display: flex;
   flex-direction: column;
@@ -225,8 +240,7 @@ h1 {
 .icons a {
   text-decoration: none;
   padding: 20px;
-  font-size: 1vw;
-  font-family: 'Raleway';
+  font-size: 1.5vw;
   margin: 2px;
   text-align: left;
   border-radius: 50px 0px 0px 50px;
@@ -234,57 +248,17 @@ h1 {
   transition: all 0.5s;
 }
 
-.icons a:hover {
-  transform: translate(0px, 0px);
-}
-
-.icons a:hover .fa-instagram {
-  color: rgb(0, 0, 0);
-}
-
-.icons a:hover .fa-whatsapp {
-  color: rgb(0, 0, 0);
-}
-
-.icons a:hover .fa-linkedin {
-  color: rgb(0, 0, 0);
-}
-
 .icons a i {
   margin-right: 30px;
   transition: all 0.5s;
-  color: rgb(255, 255, 255);
+  color: #fffbf5;
 }
 
 .icons a:hover i {
   transform: rotate(360deg);
-}
-
-.whatsapp,
-.instagram,
-.linkedin {
-  background-color: none;
-  color: rgb(0, 0, 0);
-
-}
-.whatsapp{
   font-size: 2vw;
 }
 
-.whatsapp:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-}
-
-.instagram:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-}
-
-.linkedin:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-}
 
 @media screen and (max-width: 768px) {
   .grid {
@@ -293,8 +267,7 @@ h1 {
     grid-auto-rows: 220px;
   }
   .navpart1 {
-    color: white;
-    font-size: 5vw;
+    font-size: 8vw;
     font-weight: 100;
     animation: fade-down 1s .4s;
     text-decoration: none;
@@ -318,11 +291,10 @@ h1 {
   }
   .navpart2 h4 {
     padding: 1.5vw 3vw;
-    border: 0.1px solid rgba(255, 255, 255, 0.802);
+    border: 0.1px solid #fffbf5;
     border-radius: 50px;
     font-weight: 100;
-    color: rgba(255, 255, 255, 0.835);
-    font-size: 4vw;
+    font-size: 5vw;
     position: relative;
     transition: all ease 0.3s;
     overflow: hidden;
@@ -335,20 +307,16 @@ h1 {
     margin: 2px;
     text-align: left;
     border-radius: 50px 0px 0px 50px;
-    transform: translate(140px, 0px);
-    transition: all 0.5s;
   }
   .filter-button {
     font-family: 'Raleway';
     padding: 10px 20px;
-    margin: 5px 5px;
     font-size: 4vw;
     font-weight: 100;
     color: #ffffff;
-    background-color: black;
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: background-color 1s ease, transform 0.5s ease;
+    transition: background-color 1s ease;
   }
 }

@@ -11,13 +11,14 @@ html,
 body {
     height: 100%;
     width: 100%;
+    background-color: #eabbc1;
 }
 
 #main {
     height: 100%;
     width: 100%;
-background-color: #eabbc1;
-display: inline-block;
+    background-color: #eabbc1;
+    display: inline-block;
 }
 
 #page1 {
@@ -51,10 +52,12 @@ display: inline-block;
     padding: 20px 0;
     text-align: justify;
 }
-#content h2{
+
+#content h2 {
     font-size: 2vw;
     font-weight: 100;
 }
+
 #content h4 {
     font-size: 2vw;
     font-weight: 400;
@@ -66,16 +69,18 @@ display: inline-block;
     width: 4vw;
     margin-right: 20px;
 }
-#image{
+
+#image {
     height: 100vh;
 }
 
-#image img{
+#image img {
     padding: 10vw;
     height: 100vh;
     width: auto;
 
 }
+
 a {
     text-decoration: none;
     padding: 6px 14px;
@@ -104,12 +109,16 @@ a:hover {
     #page1 {
         display: flex;
         flex-direction: column;
+        height: 30%;
+        width: 100%;
     }
+
     #content h1 {
         font-size: 5vw;
         font-weight: 500;
-    
+
     }
+
     #content {
         height: 100%;
         width: 100%;
@@ -120,38 +129,42 @@ a:hover {
         padding-left: 10vw;
         padding-right: 10vw;
     }
-    #image{
+
+    #image {
         height: 100vh;
     }
-    
-    #image img{
+
+    #image img {
         padding: 10vw;
-        height: 60vh;
+        height: 40%;
         width: auto;
-    
+
     }
-  
-        a {
-            text-decoration: none;
-            position: absolute;
-            top: 2%;
-            left: 9%;
-        }
+
+    a {
+        text-decoration: none;
+        position: absolute;
+        top: 2%;
+        left: 9%;
+    }
 
     .fa-solid.fa-circle-left {
         font-size: 30px;
     }
+
     #content img {
         height: 4vw;
         width: 4vw;
         margin-top: 0;
-       
+
     }
+
     #content h4 {
         font-size: 3vw;
         font-weight: 400;
         padding: 10px 0;
     }
+
     #content p {
         font-size: 2vw;
         font-weight: 300;
